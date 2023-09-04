@@ -8,7 +8,7 @@ import random
 import numpy as np
 
 from pyaml_env import parse_config
-config = parse_config("./src/config.yaml")
+config = parse_config("modules/alti/src/config.yaml")
 
 from captum.attr import IntegratedGradients, Saliency, InputXGradient, InterpretableEmbeddingBase, TokenReferenceBase
 

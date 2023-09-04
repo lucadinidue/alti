@@ -20,3 +20,17 @@ models:
     values: 'attention.v_lin'
     dense: 'attention.out_lin'
     pre_layer_norm: 'False'
+  xlm-roberta:
+    layer: 'roberta.encoder.layer'
+    ln1: 'attention.output.LayerNorm'
+    ln2: 'output.LayerNorm'
+    values: 'attention.self.value'
+    dense: 'attention.output.dense'
+    pre_layer_norm: 'False'
+  camembert:
+    layer: 'roberta.encoder.layer'
+    ln1: 'attention.output.LayerNorm'
+    ln2: 'output.LayerNorm'
+    values: 'attention.self.value'
+    dense: 'attention.output.dense'
+    pre_layer_norm: 'False'

@@ -22,7 +22,7 @@ from pathlib import Path
 from dotenv import load_dotenv
 load_dotenv()
 
-from src.contributions import ModelWrapper
+from modules.alti.src.contributions import ModelWrapper
 import matplotlib
 #matplotlib.use('Agg')
 
